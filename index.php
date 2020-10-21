@@ -2,12 +2,12 @@
 
 require_once("config.php");
 
-// carrega um usuario
+//carrega um usuario
 //$root = new Usuario();
 //$root->loadById(3);
 //echo $root;
 
-// carrega uma lista de usuarios
+//carrega uma lista de usuarios
 //$lista = Usuario::getList();
 //echo json_encode($lista);		
 
@@ -18,6 +18,16 @@ require_once("config.php");
 //carrega um usuario usando um login e a senha
 
 $usuario = new Usuario();
-$usuario->login("jose", "123456789");
+$usuario->getList("root", "!@#$");
 
 echo ($usuario);
+
+//$aluno = new Usuario();
+
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@lun0");
+
+//$aluno->insert();
+
+
+//echo $aluno;
